@@ -21,6 +21,25 @@ public class Main {
             System.out.println("Человек окончил университет и ходит на работу");
         }
 
+        // Задание 3
+        System.out.println("Задание 3");
+        int capacity = 102;
+        int allSeats = 60;
+        int standingSeats = capacity - allSeats;
+        int allSeatsUsed = 59;
+        int standingUsed = 40;
+        if (allSeatsUsed < allSeats) {
+            System.out.println("Есть еще " + (allSeats - allSeatsUsed) + " сидячих мест ");
+        }
+        if (allSeatsUsed == allSeats) {
+            System.out.println("Сидячих мест нет!");
+        }
+        if (standingUsed < standingSeats) {
+            System.out.println("Есть ещё " + (standingSeats - standingUsed) + " стоячих мест ");
+        }
+        if (standingUsed == standingSeats) {
+            System.out.println("Стоячих мест нет!");
+        }
     }
 }
 
